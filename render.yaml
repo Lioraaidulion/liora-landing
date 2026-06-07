@@ -1,0 +1,18 @@
+# Render Blueprint — site statique Liora AI
+# Déploiement : Render Dashboard → New → Blueprint → connecter ce dépôt.
+# (ou New → Static Site, Build Command vide, Publish Directory = .)
+services:
+  - type: web
+    name: liora-ai
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .
+    # HTTPS (Let's Encrypt) est activé automatiquement par Render.
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
