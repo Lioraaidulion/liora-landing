@@ -760,7 +760,7 @@
             <li>Réponse sous 24h avec nos créneaux</li>
           </ul>
           <p class="cta-direct">Ou contactez-nous directement :<br />
-            <a href="mailto:contact@lioraai.fr">📧 contact@lioraai.fr</a>
+            <a id="contact-link" href="mailto:contact@lioraai.fr">📧 contact@lioraai.fr</a>
           </p>
         </div>
 
@@ -843,9 +843,16 @@
   })();
 
   // Formulaire de démo → envoi par email (mailto).
-  // ⚠️ Remplacez CONTACT_EMAIL par votre adresse réelle.
+  // Email selon le domaine : contact@lioraai.ch depuis lioraai.ch, sinon contact@lioraai.fr.
   (function () {
-    var CONTACT_EMAIL = "contact@lioraai.fr";
+    var CONTACT_EMAIL = /(^|\.)lioraai\.ch$/i.test(location.hostname)
+      ? "contact@lioraai.ch"
+      : "contact@lioraai.fr";
+
+    // Adapte le lien de contact affiché au domaine visité
+    var cl = document.getElementById('contact-link');
+    if (cl) { cl.href = 'mailto:' + CONTACT_EMAIL; cl.textContent = '📧 ' + CONTACT_EMAIL; }
+
     var form = document.getElementById('demo-form');
     if (!form) return;
     form.addEventListener('submit', function (e) {
