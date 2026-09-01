@@ -10,12 +10,70 @@
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Liora AI — La réceptionniste IA qui ne dort jamais" />
 <meta property="og:description" content="La réceptionniste téléphonique IA des cabinets dentaires et de chirurgie esthétique. Répond 24h/24, prend les rendez-vous et ne laisse plus jamais un patient sans réponse. France & Suisse." />
-<meta property="og:image" content="og-image.png" />
+<meta property="og:image" content="https://lioraai.fr/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Liora AI — Réceptionniste IA pour cabinets dentaires et de chirurgie esthétique" />
+<meta property="og:site_name" content="Liora AI" />
+<meta property="og:url" content="https://lioraai.fr/" />
 <meta property="og:locale" content="fr_FR" />
+<meta property="og:locale:alternate" content="fr_CH" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Liora AI — La réceptionniste IA qui ne dort jamais" />
+<meta name="twitter:description" content="Réceptionniste téléphonique IA pour cabinets dentaires et de chirurgie esthétique. Répond 24h/24, prend les rendez-vous." />
+<meta name="twitter:image" content="https://lioraai.fr/og-image.png" />
+
+<!-- Canonical + hreflang (rendus dynamiques par domaine via le script en bas) -->
+<link rel="canonical" href="https://lioraai.fr/" />
+<link rel="alternate" hreflang="fr-FR" href="https://lioraai.fr/" />
+<link rel="alternate" hreflang="fr-CH" href="https://lioraai.ch/" />
+<link rel="alternate" hreflang="x-default" href="https://lioraai.fr/" />
+
 <meta name="theme-color" content="#171232" />
 
 <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+<!-- Données structurées (SEO) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://lioraai.fr/#organization",
+      "name": "Liora AI",
+      "url": "https://lioraai.fr/",
+      "logo": "https://lioraai.fr/og-image.png",
+      "email": "contact@lioraai.fr",
+      "description": "Réceptionniste téléphonique IA pour cabinets dentaires et de chirurgie esthétique.",
+      "areaServed": ["FR", "CH"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://lioraai.fr/#website",
+      "url": "https://lioraai.fr/",
+      "name": "Liora AI",
+      "inLanguage": "fr",
+      "publisher": { "@id": "https://lioraai.fr/#organization" }
+    },
+    {
+      "@type": "Service",
+      "name": "Réceptionniste téléphonique IA",
+      "serviceType": "Standard téléphonique externalisé par IA",
+      "provider": { "@id": "https://lioraai.fr/#organization" },
+      "areaServed": ["FR", "CH"],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Cabinets dentaires et de chirurgie esthétique"
+      },
+      "description": "Liora répond aux appels 24h/24, prend et déplace les rendez-vous, envoie les confirmations et rappels par SMS, et transfère à un humain si nécessaire — dans le respect du secret médical."
+    }
+  ]
+}
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -826,6 +884,23 @@
 </footer>
 
 <script>
+  // SEO : canonical + og:url selon le domaine ; noindex sur les hôtes non-primaires (onrender, previews)
+  (function () {
+    var h = location.hostname;
+    var isCH = /(^|\.)lioraai\.ch$/i.test(h);
+    var isFR = /(^|\.)lioraai\.fr$/i.test(h);
+    var canonical = isCH ? 'https://lioraai.ch/' : 'https://lioraai.fr/';
+    var link = document.querySelector('link[rel="canonical"]');
+    if (link) link.href = canonical;
+    var ogu = document.querySelector('meta[property="og:url"]');
+    if (ogu) ogu.setAttribute('content', canonical);
+    if (!isFR && !isCH) {
+      var m = document.createElement('meta');
+      m.name = 'robots'; m.content = 'noindex, follow';
+      document.head.appendChild(m);
+    }
+  })();
+
   // Scroll reveal
   (function () {
     var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
