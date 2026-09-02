@@ -10,13 +10,4 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-  <url>
-    <loc>https://lioraai.ch/</loc>
-    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://lioraai.fr/"/>
-    <xhtml:link rel="alternate" hreflang="fr-CH" href="https://lioraai.ch/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lioraai.fr/"/>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
 </urlset>
