@@ -499,8 +499,13 @@
      FOOTER
      ============================================================ */
   footer { border-top: 1px solid var(--line); padding-block: 44px; }
-  .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
+  .footer-inner { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; flex-wrap: wrap; }
   .footer-brand .tag { color: var(--muted); font-size: 14px; margin-top: 10px; }
+  .footer-links { display: flex; gap: 40px; flex-wrap: wrap; }
+  .footer-links h4 { font-size: 13px; color: var(--ink); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; font-family: var(--display); }
+  .footer-links ul { display: grid; gap: 9px; }
+  .footer-links a { color: var(--muted); font-size: 14px; }
+  .footer-links a:hover { color: #fff; }
   .footer-meta { color: var(--muted); font-size: 13.5px; text-align: right; max-width: 470px; line-height: 1.7; }
 
   /* ============================================================
@@ -926,6 +931,22 @@
         <span class="wordmark">Liora<span class="ai">AI</span></span>
       </a>
       <p class="tag">La lumière qui veille sur votre cabinet.</p>
+    </div>
+    <div class="footer-links">
+      <div>
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="pour-cabinets-dentaires.html">Cabinets dentaires</a></li>
+          <li><a href="pour-chirurgie-esthetique.html">Chirurgie esthétique</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Ressources</h4>
+        <ul>
+          <li><a href="pourquoi-cabinet-dentaire-perd-patients-telephone.html">Guide : appels manqués</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
     </div>
     <p class="footer-meta">Réceptionniste IA pour cabinets dentaires &amp; de chirurgie esthétique · 🇫🇷 France · 🇨🇭 Suisse · © 2026 Liora AI</p>
   </div>
