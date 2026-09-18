@@ -4,18 +4,18 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Liora AI — La réceptionniste IA qui ne dort jamais</title>
-<meta name="description" content="Réceptionniste téléphonique IA pour cabinets dentaires et de chirurgie esthétique. Répond 24h/24, aucun patient sans réponse. France & Suisse." />
+<meta name="description" content="Réceptionniste téléphonique IA pour cabinets dentaires, agences immobilières et cabinets d'avocats. Répond 24h/24, aucun appel sans réponse. France & Suisse." />
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Liora AI — La réceptionniste IA qui ne dort jamais" />
-<meta property="og:description" content="La réceptionniste téléphonique IA des cabinets dentaires et de chirurgie esthétique. Répond 24h/24, prend les rendez-vous et ne laisse plus jamais un patient sans réponse. France & Suisse." />
+<meta property="og:description" content="La réceptionniste téléphonique IA des cabinets dentaires, agences immobilières et cabinets d'avocats. Répond 24h/24, prend les rendez-vous et ne laisse plus jamais un appel sans réponse." />
 <meta property="og:image" content="https://lioraai.fr/og-image.png" />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="Liora AI — Réceptionniste IA pour cabinets dentaires et de chirurgie esthétique" />
+<meta property="og:image:alt" content="Liora AI — Réceptionniste IA pour cabinets dentaires, agences immobilières et cabinets d'avocats" />
 <meta property="og:site_name" content="Liora AI" />
 <meta property="og:url" content="https://lioraai.fr/" />
 <meta property="og:locale" content="fr_FR" />
@@ -24,7 +24,7 @@
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Liora AI — La réceptionniste IA qui ne dort jamais" />
-<meta name="twitter:description" content="Réceptionniste téléphonique IA pour cabinets dentaires et de chirurgie esthétique. Répond 24h/24, prend les rendez-vous." />
+<meta name="twitter:description" content="Réceptionniste téléphonique IA pour cabinets dentaires, agences immobilières et cabinets d'avocats. Répond 24h/24, prend les rendez-vous." />
 <meta name="twitter:image" content="https://lioraai.fr/og-image.png" />
 
 <!-- Canonical + hreflang (rendus dynamiques par domaine via le script en bas) -->
@@ -50,7 +50,7 @@
       "url": "https://lioraai.fr/",
       "logo": "https://lioraai.fr/og-image.png",
       "email": "contact@lioraai.fr",
-      "description": "Réceptionniste téléphonique IA pour cabinets dentaires et de chirurgie esthétique.",
+      "description": "Réceptionniste téléphonique IA pour cabinets dentaires, agences immobilières et cabinets d'avocats.",
       "areaServed": ["FR", "CH"]
     },
     {
@@ -67,11 +67,12 @@
       "serviceType": "Standard téléphonique externalisé par IA",
       "provider": { "@id": "https://lioraai.fr/#organization" },
       "areaServed": ["FR", "CH"],
-      "audience": {
-        "@type": "Audience",
-        "audienceType": "Cabinets dentaires et de chirurgie esthétique"
-      },
-      "description": "Liora répond aux appels 24h/24, prend et déplace les rendez-vous, envoie les confirmations et rappels par SMS, et transfère à un humain si nécessaire — dans le respect du secret médical."
+      "audience": [
+        { "@type": "Audience", "audienceType": "Cabinets dentaires" },
+        { "@type": "Audience", "audienceType": "Agences immobilières" },
+        { "@type": "Audience", "audienceType": "Cabinets d'avocats" }
+      ],
+      "description": "Liora répond aux appels 24h/24, prend et déplace les rendez-vous, envoie les confirmations et rappels par SMS, et transfère à un humain si nécessaire — dans le respect de la confidentialité professionnelle."
     },
     {
       "@type": "FAQPage",
@@ -79,18 +80,18 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Liora respecte-t-elle le secret médical et le RGPD ?",
+          "name": "Liora respecte-t-elle la confidentialité et le RGPD ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Oui, c'est un prérequis. Les échanges sont chiffrés, aucune donnée médicale n'est stockée inutilement, et le traitement respecte le RGPD. Liora se limite à la prise de rendez-vous et à l'orientation des appels — jamais de conseil médical."
+            "text": "Oui, c'est un prérequis. Les échanges sont chiffrés, aucune donnée n'est stockée inutilement, et le traitement respecte le RGPD. Liora s'adapte aux obligations de confidentialité de votre métier — secret médical, secret professionnel de l'avocat ou confidentialité des mandats immobiliers — et se limite à la prise de rendez-vous et à l'orientation des appels."
           }
         },
         {
           "@type": "Question",
-          "name": "Liora remplace-t-elle ma secrétaire ?",
+          "name": "Liora remplace-t-elle ma secrétaire ou mon assistant(e) ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Non — elle la libère. Liora absorbe les appels que votre équipe ne peut pas prendre (lignes saturées, soins en cours, soirs et week-ends) et les tâches répétitives. Votre secrétaire se concentre sur l'accueil au cabinet et les demandes complexes, vers lesquelles Liora sait escalader."
+            "text": "Non — elle la/le libère. Liora absorbe les appels que votre équipe ne peut pas prendre (lignes saturées, rendez-vous en cours, soirs et week-ends) et les tâches répétitives. Votre équipe se concentre sur l'accueil et les demandes complexes, vers lesquelles Liora sait escalader."
           }
         },
         {
@@ -98,7 +99,7 @@
           "name": "Quelle différence avec une solution bas prix ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Les solutions bas prix sont des outils que vous devez configurer et maintenir vous-même. Liora est un service clé en main : on l'installe, on la calibre pendant 30 jours pour qu'elle parle comme votre cabinet, et on assure la maintenance. Vous n'avez rien à gérer."
+            "text": "Les solutions bas prix sont des outils que vous devez configurer et maintenir vous-même. Liora est un service clé en main : on l'installe, on la calibre pendant 30 jours pour qu'elle parle comme votre structure, et on assure la maintenance. Vous n'avez rien à gérer."
           }
         },
         {
@@ -106,7 +107,7 @@
           "name": "Quel est le délai de démarrage ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Liora est opérationnelle en moins de 48h, sans changer votre installation téléphonique actuelle. Suit ensuite une période de calibrage de 30 jours pour affiner ses réponses à votre cabinet."
+            "text": "Liora est opérationnelle en moins de 48h, sans changer votre installation téléphonique actuelle. Suit ensuite une période de calibrage de 30 jours pour affiner ses réponses à votre activité."
           }
         },
         {
@@ -114,7 +115,7 @@
           "name": "Combien ça coûte ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Le tarif dépend du nombre de praticiens et de votre volume d'appels — il reste autour d'un tiers du coût d'une secrétaire. Le plus simple est d'en discuter lors d'une démo gratuite de 15 minutes, où l'on vous donne un prix clair et adapté."
+            "text": "Le tarif dépend de votre volume d'appels et de la taille de votre équipe. Le plus simple est d'en discuter lors d'une démo gratuite de 15 minutes, sans engagement, où l'on vous donne un prix clair et adapté à votre activité."
           }
         }
       ]
@@ -160,7 +161,9 @@
     --shadow-btn: 0 14px 40px rgba(124, 131, 245, .45);
     --shadow-hero: 0 50px 110px rgba(0, 0, 0, .6);
     --grad-text: linear-gradient(100deg, #c9c3ff 0%, #7c83f5 45%, #e7c873 100%);
-    --grad-accent: linear-gradient(135deg, #8b91ff, #6a72ef);
+    /* Deepened vs. the original #8b91ff→#6a72ef: that pair gave white button text
+       ~3.3:1 contrast (fails WCAG AA 4.5:1). This stays >=4.7:1 end-to-end. */
+    --grad-accent: linear-gradient(135deg, #5c63e6, #454ccb);
   }
 
   /* ============================================================
@@ -245,6 +248,19 @@
   .section-head p { color: var(--muted); margin-top: 18px; font-size: 18px; font-family: var(--body); }
 
   /* ============================================================
+     ACCESSIBILITY: skip link + focus states
+     ============================================================ */
+  .skip-link {
+    position: absolute; left: 12px; top: -60px; z-index: 1000;
+    background: var(--ink); color: var(--bg); font-weight: 600; font-size: 14px;
+    padding: 12px 18px; border-radius: 10px; transition: top .2s ease;
+  }
+  .skip-link:focus { top: 12px; }
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible, summary:focus-visible {
+    outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 4px;
+  }
+
+  /* ============================================================
      BUTTONS
      ============================================================ */
   .btn {
@@ -298,11 +314,18 @@
   .brand .logo { width: 36px; height: 36px; flex-shrink: 0; filter: drop-shadow(0 0 10px rgba(231,200,115,.45)); }
   .brand .wordmark { font-family: var(--display); font-weight: 700; font-size: 21px; letter-spacing: -.3px; }
   .brand .wordmark .ai { color: var(--gold); font-size: 13px; margin-left: 3px; vertical-align: super; font-weight: 600; }
-  .nav-links { display: flex; gap: 30px; }
+  .nav-right { display: flex; align-items: center; gap: 14px; }
+  .nav-links { display: flex; gap: 26px; }
   .nav-links a { color: var(--muted); font-weight: 500; font-size: 15px; transition: color .2s; position: relative; }
   .nav-links a::after { content: ""; position: absolute; left: 0; bottom: -6px; width: 0; height: 2px; background: var(--grad-accent); border-radius: 2px; transition: width .25s ease; }
   .nav-links a:hover { color: #fff; }
   .nav-links a:hover::after { width: 100%; }
+  .nav-toggle {
+    display: none; width: 40px; height: 40px; border-radius: 10px; flex-shrink: 0;
+    background: rgba(255,255,255,.06); border: 1px solid var(--line);
+    flex-direction: column; align-items: center; justify-content: center; gap: 5px; cursor: pointer;
+  }
+  .nav-toggle span { width: 18px; height: 2px; background: var(--ink); border-radius: 2px; }
 
   /* ============================================================
      HERO
@@ -324,9 +347,14 @@
   .pill-badge .s { color: var(--gold); letter-spacing: 1.5px; font-size: 13px; }
 
   .hero h1 {
-    font-size: 58px; font-weight: 700; letter-spacing: -1.6px; line-height: 1.06; margin-bottom: 24px;
+    font-size: 56px; font-weight: 700; letter-spacing: -1.6px; line-height: 1.08; margin-bottom: 24px;
   }
-  .hero p.lead { color: var(--muted); font-size: 18.5px; max-width: 540px; margin-bottom: 34px; }
+  .hero p.lead { color: var(--muted); font-size: 18.5px; max-width: 560px; margin-bottom: 34px; }
+  .hero-verticals { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 34px; }
+  .hero-verticals span {
+    font-size: 13px; font-weight: 500; color: var(--ink); padding: 7px 14px; border-radius: var(--r-pill);
+    background: rgba(124,131,245,.14); border: 1px solid rgba(124,131,245,.3);
+  }
   .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
   .hero-trust { margin-top: 24px; font-size: 13.5px; color: var(--muted); display: flex; align-items: center; gap: 8px; }
   .hero-trust .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); box-shadow: 0 0 10px var(--green); }
@@ -373,10 +401,60 @@
      STATS
      ============================================================ */
   .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; margin-top: 12px; }
-  .stat { padding: 28px 26px; }
+  .stat { padding: 28px 26px; display: block; }
   .stat .num { font-family: var(--display); font-size: 46px; font-weight: 700; letter-spacing: -1.5px; line-height: 1; margin-bottom: 14px;
     background: var(--grad-text); -webkit-background-clip: text; background-clip: text; color: transparent; }
   .stat .label { color: var(--muted); font-size: 14.5px; line-height: 1.5; }
+  .stat-cta { transition: transform .25s ease, border-color .25s ease; cursor: pointer; }
+  .stat-cta:hover { transform: translateY(-5px); }
+  .stat-cta:hover .label { color: var(--ink); }
+  .stat-cta .label { transition: color .2s ease; }
+
+  /* ============================================================
+     VERTICALS (3 audiences)
+     ============================================================ */
+  .grid-3-verticals { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .vertical-card {
+    --mx: 50%; --my: 50%;
+    padding: 32px 28px; display: flex; flex-direction: column; position: relative;
+    transform-style: preserve-3d; perspective: 900px;
+    transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s ease;
+    will-change: transform;
+  }
+  /* Cursor-tracked spotlight glow (JS sets --mx/--my on mousemove) */
+  .vertical-card::after {
+    content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; z-index: 0;
+    background: radial-gradient(360px circle at var(--mx) var(--my), rgba(124,131,245,.22), transparent 62%);
+    opacity: 0; transition: opacity .4s ease;
+  }
+  .vertical-card:hover::after { opacity: 1; }
+  .vertical-card:hover { transform: translateY(-6px); box-shadow: 0 26px 60px rgba(0,0,0,.35); }
+  .vertical-card > * { position: relative; z-index: 1; }
+  .vertical-card .icon {
+    width: 54px; height: 54px; border-radius: 16px; display: grid; place-items: center; margin-bottom: 22px;
+    background: radial-gradient(circle at 30% 30%, rgba(124,131,245,.28), rgba(124,131,245,.08));
+    border: 1px solid rgba(124,131,245,.3); box-shadow: 0 0 20px rgba(124,131,245,.18);
+    position: relative; transition: transform .45s cubic-bezier(.34,1.56,.64,1);
+  }
+  /* Spinning gradient ring behind the icon, revealed on hover */
+  .vertical-card .icon::before {
+    content: ""; position: absolute; inset: -5px; border-radius: 19px; padding: 2px;
+    background: conic-gradient(from 0deg, transparent, var(--indigo) 25%, var(--gold) 55%, transparent 82%);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+            mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor; mask-composite: exclude;
+    opacity: 0; transition: opacity .3s ease; pointer-events: none;
+  }
+  .vertical-card:hover .icon { transform: scale(1.1) rotate(-6deg); }
+  .vertical-card:hover .icon::before { opacity: 1; animation: spin-ring 2.6s linear infinite; }
+  .vertical-card .icon svg { width: 26px; height: 26px; transition: transform .4s ease; }
+  .vertical-card:hover .icon svg { transform: scale(1.08); }
+  .vertical-card h3 { font-size: 20px; font-weight: 600; margin-bottom: 10px; letter-spacing: -.3px; }
+  .vertical-card p { color: var(--muted); font-size: 15px; margin-bottom: 20px; flex: 1; }
+  .vertical-card .btn-ghost { align-self: flex-start; padding: 10px 20px; font-size: 13.5px; }
+  @keyframes spin-ring { to { transform: rotate(360deg); } }
+  .vertical-card[data-reveal] { transform: translateY(28px) scale(.94); }
+  .vertical-card[data-reveal].in { transform: none; }
 
   /* ============================================================
      FEATURE CARDS
@@ -458,6 +536,10 @@
   .cta-band h2 { margin-bottom: 16px; }
   .cta-grid { display: grid; grid-template-columns: 1.02fr .98fr; gap: 46px; align-items: center; }
   .cta-copy > p { color: #d8d5f0; font-size: 17px; max-width: 460px; margin-bottom: 24px; }
+  .btn-calendar { margin-bottom: 28px; box-shadow: 0 10px 30px rgba(124,131,245,.4); }
+  .btn-calendar svg { flex-shrink: 0; }
+  .btn-calendar:hover { box-shadow: 0 14px 40px rgba(231,200,115,.35), var(--shadow-btn); }
+  .form-heading { color: var(--ink); font-size: 14px; font-weight: 600; margin-bottom: 4px; }
   .cta-points { display: grid; gap: 11px; margin-bottom: 24px; }
   .cta-points li { color: var(--ink); font-size: 14.5px; display: flex; gap: 9px; align-items: flex-start; }
   .cta-points li::before { content: "✓"; color: var(--gold); font-weight: 700; }
@@ -490,10 +572,30 @@
     background-repeat: no-repeat; background-position: right 14px center;
   }
   .field select option { background: #1c1640; color: var(--ink); }
+  .field.has-error input, .field.has-error textarea, .field.has-error select { border-color: var(--red); box-shadow: 0 0 0 3px rgba(255,155,155,.14); }
+  .field-error { display: none; color: var(--red); font-size: 12px; margin-top: 2px; }
+  .field.has-error .field-error { display: block; }
+  .hp-field { position: absolute; left: -9999px; top: -9999px; width: 1px; height: 1px; overflow: hidden; }
   .cta-form .btn { width: 100%; margin-top: 4px; }
   .form-note { font-size: 11.5px; color: var(--muted); text-align: center; line-height: 1.5; }
   .form-success { display: none; color: var(--green); font-size: 14px; text-align: center; padding: 6px 4px 0; line-height: 1.5; }
   .cta-form.sent .form-success { display: block; }
+
+  /* ============================================================
+     COOKIE CONSENT BANNER
+     ============================================================ */
+  .cookie-banner {
+    position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 200;
+    max-width: 720px; margin-inline: auto; border-radius: 20px; padding: 20px 22px;
+    background: linear-gradient(160deg, rgba(28,22,64,.96), rgba(20,16,46,.98));
+    border: 1px solid var(--line); box-shadow: 0 30px 70px rgba(0,0,0,.5);
+    display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
+  }
+  .cookie-banner[hidden] { display: none; }
+  .cookie-banner p { color: var(--muted); font-size: 13.5px; line-height: 1.6; margin: 0; flex: 1 1 320px; }
+  .cookie-banner a { color: var(--ink); text-decoration: underline; text-underline-offset: 2px; }
+  .cookie-banner-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+  .cookie-banner .btn { padding: 10px 20px; font-size: 13.5px; }
 
   /* ============================================================
      FOOTER
@@ -501,12 +603,25 @@
   footer { border-top: 1px solid var(--line); padding-block: 44px; }
   .footer-inner { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; flex-wrap: wrap; }
   .footer-brand .tag { color: var(--muted); font-size: 14px; margin-top: 10px; }
+  .footer-social { display: flex; gap: 12px; margin-top: 16px; }
+  .footer-social a {
+    width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center;
+    background: rgba(255,255,255,.06); border: 1px solid var(--line); color: var(--muted); transition: color .2s, border-color .2s, transform .2s;
+  }
+  .footer-social a:hover { color: #fff; border-color: rgba(124,131,245,.5); transform: translateY(-2px); }
+  .footer-social svg { width: 17px; height: 17px; }
   .footer-links { display: flex; gap: 40px; flex-wrap: wrap; }
   .footer-links h4 { font-size: 13px; color: var(--ink); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; font-family: var(--display); }
   .footer-links ul { display: grid; gap: 9px; }
   .footer-links a { color: var(--muted); font-size: 14px; }
   .footer-links a:hover { color: #fff; }
   .footer-meta { color: var(--muted); font-size: 13.5px; text-align: right; max-width: 470px; line-height: 1.7; }
+  .footer-legal { display: flex; gap: 16px; flex-wrap: wrap; justify-content: flex-end; margin-top: 14px; }
+  .footer-legal a, .footer-legal button {
+    color: var(--muted); font-size: 12.5px; background: none; border: none; padding: 0; cursor: pointer;
+    font-family: var(--body); text-decoration: underline; text-underline-offset: 2px;
+  }
+  .footer-legal a:hover, .footer-legal button:hover { color: #fff; }
 
   /* ============================================================
      SCROLL REVEAL
@@ -518,20 +633,36 @@
      RESPONSIVE
      ============================================================ */
   @media (max-width: 880px) {
-    :root { --section-y: 70px; }
-    .nav-links { display: none; }
+    :root { --section-y: 70px; --pad: 16px; }
+    .nav-right { gap: 8px; }
+    .brand .wordmark { font-size: 18px; }
+    .nav-right .btn-primary { padding: 10px 14px; font-size: 13px; }
+    .nav-toggle { display: flex; }
+    .nav-links {
+      /* Solid opaque color, no backdrop-filter: nesting a blurred/translucent dropdown
+         inside the already-blurred sticky .nav causes a compositing bug in some engines
+         where the dropdown reads as ~15-20% opacity instead of the declared 98%, letting
+         page content bleed through. A flat solid color sidesteps that entirely. */
+      display: none; position: absolute; top: 74px; left: 0; right: 0; z-index: 99;
+      background: #171233;
+      flex-direction: column; gap: 2px; padding: 10px 24px 18px; border-bottom: 1px solid var(--line);
+    }
+    .nav-links.open { display: flex; }
+    .nav-links a { padding: 13px 2px; border-bottom: 1px solid rgba(255,255,255,.06); }
     .hero-grid { grid-template-columns: 1fr; gap: 44px; }
-    .hero h1 { font-size: 40px; letter-spacing: -1px; }
+    .hero h1 { font-size: 38px; letter-spacing: -1px; }
     .hero p.lead { font-size: 17px; }
-    h2 { font-size: 31px; }
+    h2 { font-size: 29px; }
     .stats { grid-template-columns: repeat(2, 1fr); }
-    .grid-3, .steps { grid-template-columns: 1fr; }
+    .grid-3, .steps, .grid-3-verticals { grid-template-columns: 1fr; }
     table.compare th, table.compare td { padding: 12px 14px; font-size: 12.5px; }
     .cta-band { padding: 44px 24px; }
     .cta-grid { grid-template-columns: 1fr; gap: 32px; }
     .field-row { grid-template-columns: 1fr; }
-    .footer-inner { flex-direction: column; align-items: flex-start; }
-    .footer-meta { text-align: left; }
+    .footer-inner { flex-direction: column; }
+    .footer-meta, .footer-legal { text-align: left; justify-content: flex-start; }
+    .cookie-banner { flex-direction: column; align-items: stretch; left: 10px; right: 10px; bottom: 10px; padding: 18px; }
+    .cookie-banner-actions .btn { flex: 1; }
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -543,6 +674,8 @@
 </style>
 </head>
 <body>
+
+<a href="#top" class="skip-link">Aller au contenu principal</a>
 
 <!-- Ambient animated light -->
 <div class="orb-field" aria-hidden="true">
@@ -593,6 +726,17 @@
       <path d="M28.4 36.4 h7.2 l-3.6 4.4 z" />
     </g>
   </symbol>
+
+  <!-- Vertical icons -->
+  <symbol id="icon-tooth" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 3c-2.2 0-3 1.1-4.2 1.1S5.4 3 4 3.9C2.4 5 2 7.3 2.6 9.6c.5 2 1.6 3.6 2.2 5.7.5 1.7.7 5.1 2.3 5.7 1.5.6 2-2.7 2.6-4.3.4-1 .7-1.7 2.3-1.7s1.9.7 2.3 1.7c.6 1.6 1.1 4.9 2.6 4.3 1.6-.6 1.8-4 2.3-5.7.6-2.1 1.7-3.7 2.2-5.7C21.9 7.3 21.5 5 19.9 3.9c-1.4-.9-2.6.2-3.7.2S14.1 3 12 3Z"/>
+  </symbol>
+  <symbol id="icon-house" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9.5a1 1 0 0 0 1 1H9a1 1 0 0 0 1-1V15a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4.5a1 1 0 0 0 1 1h2.5a1 1 0 0 0 1-1V10"/>
+  </symbol>
+  <symbol id="icon-scale" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 3v18M8 21h8M5 7h5M14 7h5M5 7 2.5 12.5a2.7 2.7 0 0 0 5 0L5 7ZM19 7l-2.5 5.5a2.7 2.7 0 0 0 5 0L19 7Z"/>
+  </symbol>
 </svg>
 
 <!-- =========================================================
@@ -604,13 +748,19 @@
       <svg class="logo" aria-hidden="true"><use href="#lion" /></svg>
       <span class="wordmark">Liora<span class="ai">AI</span></span>
     </a>
-    <nav class="nav-links" aria-label="Navigation principale">
-      <a href="#liora">Liora</a>
-      <a href="#fonctionnement">Fonctionnement</a>
-      <a href="#pourquoi">Pourquoi nous</a>
+    <nav class="nav-links" id="nav-links" aria-label="Navigation principale">
+      <a href="pour-cabinets-dentaires.html">Cabinets dentaires</a>
+      <a href="pour-agences-immobilieres.html">Agences immobilières</a>
+      <a href="pour-cabinets-avocats.html">Cabinets d'avocats</a>
+      <a href="pourquoi-cabinet-dentaire-perd-patients-telephone.html">Guide</a>
       <a href="#faq">FAQ</a>
     </nav>
-    <a href="#demo" class="btn btn-primary">Réserver une démo</a>
+    <div class="nav-right">
+      <a href="https://calendar.app.google/Gmgc3J21GyVwhLgh6" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Réserver une démo</a>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
 
@@ -624,12 +774,17 @@
     <div>
       <div class="pill-badge" data-reveal>
         <span class="s">★★★★★</span>
-        <span>Conçu pour les cabinets dentaires &amp; de chirurgie esthétique</span>
+        <span>Dentistes · Agences immobilières · Avocats</span>
       </div>
-      <h1 data-reveal style="transition-delay:.06s">Ne laissez <span class="grad">plus jamais</span> un patient sans réponse.</h1>
-      <p class="lead" data-reveal style="transition-delay:.12s">Liora est la réceptionniste IA de votre cabinet. Elle répond à chaque appel, 24h/24, prend et déplace les rendez-vous, et passe la main à votre équipe quand c'est nécessaire. Une collaboratrice qui ne dort jamais, ne tombe jamais malade — et ne perd aucun patient.</p>
+      <h1 data-reveal style="transition-delay:.06s">Ne laissez <span class="grad">plus jamais</span> un appel sans réponse.</h1>
+      <p class="lead" data-reveal style="transition-delay:.12s">Liora est la réceptionniste IA de votre cabinet ou de votre agence. Elle répond à chaque appel, 24h/24, prend et déplace les rendez-vous, et passe la main à votre équipe quand c'est nécessaire. Une collaboratrice qui ne dort jamais, ne tombe jamais malade — et ne perd aucun contact.</p>
+      <div class="hero-verticals" data-reveal style="transition-delay:.15s">
+        <span>🦷 Cabinets dentaires</span>
+        <span>🏠 Agences immobilières</span>
+        <span>⚖️ Cabinets d'avocats</span>
+      </div>
       <div class="hero-cta" data-reveal style="transition-delay:.18s">
-        <a href="#demo" class="btn btn-primary">Réserver une démo gratuite</a>
+        <a href="https://calendar.app.google/Gmgc3J21GyVwhLgh6" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Réserver une démo gratuite</a>
         <a href="#liora" class="btn btn-ghost">Découvrir Liora</a>
       </div>
       <div class="hero-trust" data-reveal style="transition-delay:.24s">
@@ -661,25 +816,58 @@
   <div class="container">
     <div class="section-head" data-reveal>
       <p class="kicker">Le problème</p>
-      <h2>Un appel manqué, c'est un patient <span class="grad">qui prend rendez-vous ailleurs.</span></h2>
-      <p>Fauteuil occupé, pause déjeuner, soirs et week-ends : une grande partie des appels d'un cabinet n'aboutit jamais. Et un patient qui tombe sur un répondeur ne rappelle pas — il compose le numéro du cabinet d'à côté. C'est votre chiffre d'affaires, et votre réputation, qui s'évaporent en silence.</p>
+      <h2>Un appel manqué, c'est un contact <span class="grad">qui va voir ailleurs.</span></h2>
+      <p>Rendez-vous en cours, visite sur site, audience au tribunal, pause déjeuner, soirs et week-ends : une grande partie des appels n'aboutit jamais. Dans les cabinets dentaires, agences immobilières et cabinets d'avocats, jusqu'à <strong style="color:var(--ink);">62 % des appels</strong> tomberaient sans réponse aux heures de pointe — et un patient, un acquéreur ou un client qui tombe sur un répondeur ne rappelle pas : il compose le numéro suivant sur sa liste. C'est votre chiffre d'affaires, et votre réputation, qui s'évaporent en silence.</p>
     </div>
     <div class="stats">
       <div class="stat glass" data-reveal>
-        <div class="num">24/7</div>
-        <div class="label">Liora répond, même quand votre équipe est en soin ou absente</div>
+        <div class="num">62%</div>
+        <div class="label">des appels potentiellement sans réponse aux heures de pointe — autant de clients qui vont voir ailleurs</div>
       </div>
       <div class="stat glass" data-reveal style="transition-delay:.08s">
-        <div class="num">0</div>
-        <div class="label">appel manqué, donc aucun patient perdu faute de réponse</div>
+        <div class="num">24/7</div>
+        <div class="label">Liora répond, même quand votre équipe est en rendez-vous, en visite ou absente</div>
       </div>
       <div class="stat glass" data-reveal style="transition-delay:.16s">
         <div class="num">&lt;48h</div>
         <div class="label">pour être opérationnelle, sans changer votre standard actuel</div>
       </div>
-      <div class="stat glass" data-reveal style="transition-delay:.24s">
-        <div class="num">~⅓</div>
-        <div class="label">du coût d'une secrétaire, pour un accueil qui ne dort jamais</div>
+      <a href="https://calendar.app.google/Gmgc3J21GyVwhLgh6" class="stat glass stat-cta" data-reveal style="transition-delay:.24s" target="_blank" rel="noopener noreferrer">
+        <div class="num">15 min</div>
+        <div class="label">pour voir Liora en direct — démo gratuite, sans engagement. Réservez la vôtre sur Google Calendar →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     TROIS MÉTIERS, MÊME EXIGENCE — verticals
+     ========================================================= -->
+<section id="secteurs">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="kicker">Nos secteurs</p>
+      <h2>Trois métiers exigeants. <span class="grad">Une seule Liora.</span></h2>
+      <p>Liora se calibre à votre activité : le vocabulaire, les règles de prise de rendez-vous et le niveau de confidentialité changent selon votre métier.</p>
+    </div>
+    <div class="grid-3-verticals">
+      <div class="vertical-card glass" data-reveal>
+        <div class="icon"><svg aria-hidden="true"><use href="#icon-tooth" /></svg></div>
+        <h3>Cabinets dentaires</h3>
+        <p>Prise de RDV, orientation des urgences, rappels SMS anti no-show — pendant que votre équipe reste au fauteuil.</p>
+        <a href="pour-cabinets-dentaires.html" class="btn btn-ghost">Voir la solution</a>
+      </div>
+      <div class="vertical-card glass" data-reveal style="transition-delay:.08s">
+        <div class="icon"><svg aria-hidden="true"><use href="#icon-house" /></svg></div>
+        <h3>Agences immobilières</h3>
+        <p>Qualification des appels acheteurs/locataires, prise de rendez-vous de visite, aucune demande perdue le week-end.</p>
+        <a href="pour-agences-immobilieres.html" class="btn btn-ghost">Voir la solution</a>
+      </div>
+      <div class="vertical-card glass" data-reveal style="transition-delay:.16s">
+        <div class="icon"><svg aria-hidden="true"><use href="#icon-scale" /></svg></div>
+        <h3>Cabinets d'avocats</h3>
+        <p>Premier accueil des clients, prise de rendez-vous de consultation, orientation des urgences, secret professionnel respecté.</p>
+        <a href="pour-cabinets-avocats.html" class="btn btn-ghost">Voir la solution</a>
       </div>
     </div>
   </div>
@@ -688,7 +876,7 @@
 <!-- =========================================================
      RENCONTREZ LIORA — features
      ========================================================= -->
-<section id="liora">
+<section class="bg2 divider-top" id="liora">
   <div class="container">
     <div class="section-head" data-reveal>
       <p class="kicker">Rencontrez Liora</p>
@@ -703,22 +891,22 @@
       <div class="card glass" data-reveal style="transition-delay:.08s">
         <div class="icon">📅</div>
         <h3>Gère vos rendez-vous</h3>
-        <p>Elle prend, déplace et annule les rendez-vous directement dans votre agenda, en respectant vos praticiens, vos créneaux et vos règles.</p>
+        <p>Elle prend, déplace et annule les rendez-vous directement dans votre agenda, en respectant vos règles et vos disponibilités.</p>
       </div>
       <div class="card glass" data-reveal style="transition-delay:.16s">
         <div class="icon">🤝</div>
         <h3>Passe la main quand il le faut</h3>
-        <p>Urgence, cas sensible, demande délicate : Liora reconnaît ses limites et transfère l'appel à la bonne personne, sans jamais faire attendre le patient.</p>
+        <p>Urgence, cas sensible, demande délicate : Liora reconnaît ses limites et transfère l'appel à la bonne personne, sans jamais faire attendre l'interlocuteur.</p>
       </div>
       <div class="card glass" data-reveal>
         <div class="icon">💬</div>
         <h3>Confirmations &amp; rappels SMS</h3>
-        <p>Chaque rendez-vous confirmé par SMS, avec rappel avant l'échéance. Résultat : beaucoup moins de no-shows, un agenda qui reste plein.</p>
+        <p>Chaque rendez-vous confirmé par SMS, avec rappel avant l'échéance. Résultat : beaucoup moins d'absences, un agenda qui reste plein.</p>
       </div>
       <div class="card glass" data-reveal style="transition-delay:.08s">
         <div class="icon">🔒</div>
-        <h3>Respect du secret médical</h3>
-        <p>Conçue pour le milieu médical : échanges sécurisés, conformité RGPD, aucune donnée sensible stockée inutilement.</p>
+        <h3>Confidentialité &amp; conformité</h3>
+        <p>Conçue pour les métiers à obligation de confidentialité : secret médical, secret professionnel de l'avocat, confidentialité des mandats. Échanges chiffrés, conformité RGPD.</p>
       </div>
       <div class="card glass" data-reveal style="transition-delay:.16s">
         <div class="icon">📊</div>
@@ -732,7 +920,7 @@
 <!-- =========================================================
      COMMENT ÇA MARCHE — steps
      ========================================================= -->
-<section class="bg2 divider-top" id="fonctionnement">
+<section id="fonctionnement">
   <div class="container">
     <div class="section-head" data-reveal>
       <p class="kicker">Comment ça marche</p>
@@ -747,12 +935,12 @@
       <div class="step glass" data-reveal style="transition-delay:.08s">
         <div class="n">02</div>
         <h3>Calibrage 30 jours</h3>
-        <p>On affine sa voix, ses réponses et vos règles de prise de rendez-vous pour qu'elle parle exactement comme votre cabinet.</p>
+        <p>On affine sa voix, ses réponses et vos règles de prise de rendez-vous pour qu'elle parle exactement comme votre structure.</p>
       </div>
       <div class="step glass" data-reveal style="transition-delay:.16s">
         <div class="n">03</div>
-        <h3>Elle accueille, vous soignez</h3>
-        <p>Liora prend le standard en charge. Votre équipe se consacre aux patients au fauteuil, plus au téléphone.</p>
+        <h3>Elle accueille, vous vous concentrez sur votre métier</h3>
+        <p>Liora prend le standard en charge. Votre équipe se consacre à ses patients, ses clients ou ses dossiers — plus au téléphone.</p>
       </div>
     </div>
   </div>
@@ -761,18 +949,18 @@
 <!-- =========================================================
      POURQUOI LIORA — comparison
      ========================================================= -->
-<section id="pourquoi">
+<section class="bg2 divider-top" id="pourquoi">
   <div class="container">
     <div class="section-head" data-reveal>
       <p class="kicker">Pourquoi Liora</p>
-      <h2>Ni une secrétaire seule, <span class="grad">ni un logiciel de plus.</span></h2>
+      <h2>Ni un(e) secrétaire seul(e), <span class="grad">ni un logiciel de plus.</span></h2>
     </div>
     <div class="table-wrap glass" data-reveal>
       <table class="compare">
         <thead>
           <tr>
             <th scope="col"></th>
-            <th scope="col">Secrétaire seule</th>
+            <th scope="col">Secrétaire seul(e)</th>
             <th scope="col">Logiciel à configurer</th>
             <th scope="col" class="col-liora">Liora AI</th>
           </tr>
@@ -803,16 +991,16 @@
             <td class="col-liora"><span class="yes">✓</span></td>
           </tr>
           <tr>
-            <th scope="row">Conformité secret médical</th>
+            <th scope="row">Confidentialité &amp; conformité RGPD</th>
             <td><span class="yes">✓</span></td>
             <td><span class="no">✗</span></td>
             <td class="col-liora"><span class="yes">✓</span></td>
           </tr>
           <tr>
-            <th scope="row">Coût mensuel</th>
-            <td>Élevé</td>
-            <td>Variable</td>
-            <td class="col-liora"><span class="cell-note">~⅓ d'une secrétaire</span></td>
+            <th scope="row">Tarif</th>
+            <td>Salaire chargé</td>
+            <td>Abonnement variable</td>
+            <td class="col-liora"><a href="https://calendar.app.google/Gmgc3J21GyVwhLgh6" class="cell-note" style="text-decoration:underline;text-underline-offset:3px;" target="_blank" rel="noopener noreferrer">Sur devis, en démo →</a></td>
           </tr>
         </tbody>
       </table>
@@ -823,7 +1011,7 @@
 <!-- =========================================================
      FAQ
      ========================================================= -->
-<section class="bg2 divider-top" id="faq">
+<section id="faq">
   <div class="container">
     <div class="section-head" data-reveal style="text-align:center; margin-inline:auto;">
       <p class="kicker">FAQ</p>
@@ -831,24 +1019,24 @@
     </div>
     <div class="faq">
       <details class="glass" data-reveal>
-        <summary>Liora respecte-t-elle le secret médical et le RGPD ? <span class="chev">+</span></summary>
-        <div class="answer">Oui, c'est un prérequis. Les échanges sont chiffrés, aucune donnée médicale n'est stockée inutilement, et le traitement respecte le RGPD. Liora se limite à la prise de rendez-vous et à l'orientation des appels — jamais de conseil médical.</div>
+        <summary>Liora respecte-t-elle la confidentialité et le RGPD ? <span class="chev">+</span></summary>
+        <div class="answer">Oui, c'est un prérequis. Les échanges sont chiffrés, aucune donnée n'est stockée inutilement, et le traitement respecte le RGPD. Liora s'adapte aux obligations de confidentialité de votre métier — secret médical, secret professionnel de l'avocat ou confidentialité des mandats immobiliers — et se limite à la prise de rendez-vous et à l'orientation des appels.</div>
       </details>
       <details class="glass" data-reveal>
-        <summary>Liora remplace-t-elle ma secrétaire ? <span class="chev">+</span></summary>
-        <div class="answer">Non — elle la libère. Liora absorbe les appels que votre équipe ne peut pas prendre (lignes saturées, soins en cours, soirs et week-ends) et les tâches répétitives. Votre secrétaire se concentre sur l'accueil au cabinet et les demandes complexes, vers lesquelles Liora sait escalader.</div>
+        <summary>Liora remplace-t-elle ma secrétaire ou mon assistant(e) ? <span class="chev">+</span></summary>
+        <div class="answer">Non — elle la/le libère. Liora absorbe les appels que votre équipe ne peut pas prendre (lignes saturées, rendez-vous en cours, soirs et week-ends) et les tâches répétitives. Votre équipe se concentre sur l'accueil et les demandes complexes, vers lesquelles Liora sait escalader.</div>
       </details>
       <details class="glass" data-reveal>
         <summary>Quelle différence avec une solution bas prix ? <span class="chev">+</span></summary>
-        <div class="answer">Les solutions bas prix sont des outils que vous devez configurer et maintenir vous-même. Liora est un service clé en main : on l'installe, on la calibre pendant 30 jours pour qu'elle parle comme votre cabinet, et on assure la maintenance. Vous n'avez rien à gérer.</div>
+        <div class="answer">Les solutions bas prix sont des outils que vous devez configurer et maintenir vous-même. Liora est un service clé en main : on l'installe, on la calibre pendant 30 jours pour qu'elle parle comme votre structure, et on assure la maintenance. Vous n'avez rien à gérer.</div>
       </details>
       <details class="glass" data-reveal>
         <summary>Quel est le délai de démarrage ? <span class="chev">+</span></summary>
-        <div class="answer">Liora est opérationnelle en moins de 48h, sans changer votre installation téléphonique actuelle. Suit ensuite une période de calibrage de 30 jours pour affiner ses réponses à votre cabinet.</div>
+        <div class="answer">Liora est opérationnelle en moins de 48h, sans changer votre installation téléphonique actuelle. Suit ensuite une période de calibrage de 30 jours pour affiner ses réponses à votre activité.</div>
       </details>
       <details class="glass" data-reveal>
         <summary>Combien ça coûte ? <span class="chev">+</span></summary>
-        <div class="answer">Le tarif dépend du nombre de praticiens et de votre volume d'appels — il reste autour d'un tiers du coût d'une secrétaire. Le plus simple est d'en discuter lors d'une démo gratuite de 15 minutes, où l'on vous donne un prix clair et adapté.</div>
+        <div class="answer">Le tarif dépend de votre volume d'appels et de la taille de votre équipe. Le plus simple est d'en discuter lors d'une <a href="https://calendar.app.google/Gmgc3J21GyVwhLgh6" style="color:var(--ink);text-decoration:underline;" target="_blank" rel="noopener noreferrer">démo gratuite de 15 minutes</a>, sans engagement, où l'on vous donne un prix clair et adapté à votre activité.</div>
       </details>
     </div>
   </div>
@@ -864,35 +1052,44 @@
         <div class="cta-copy">
           <p class="kicker">Réserver une démo</p>
           <h2>Découvrez Liora en direct, <span class="grad">en 15 minutes.</span></h2>
-          <p>Laissez-nous vos coordonnées : on vous envoie nos disponibilités sous 24h et on vous montre concrètement comment Liora répond à vos patients — avec un tarif clair, adapté à votre cabinet. Sans engagement.</p>
+          <p>Choisissez vous-même votre créneau dans notre agenda — confirmation immédiate, sans attendre de rappel. On vous montre concrètement comment Liora répond à vos appels, avec un tarif clair, adapté à votre activité. Sans engagement.</p>
+          <a href="https://calendar.app.google/Gmgc3J21GyVwhLgh6" class="btn btn-primary btn-calendar" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M3 10h18M8 2v4M16 2v4"/><path d="m9 16 2 2 4-4"/></svg>
+            Choisir mon créneau sur Google Calendar
+          </a>
           <ul class="cta-points">
-            <li>Démo personnalisée à votre cabinet</li>
-            <li>Tarif clair, selon le nombre de praticiens</li>
-            <li>Réponse sous 24h avec nos créneaux</li>
+            <li>Démo personnalisée à votre activité</li>
+            <li>Tarif clair, selon votre volume d'appels</li>
+            <li>Créneau confirmé instantanément dans votre agenda</li>
           </ul>
-          <p class="cta-direct">Ou contactez-nous directement :<br />
+          <p class="cta-direct">Vous préférez qu'on vous recontacte plutôt ? Laissez vos coordonnées ci-contre, ou écrivez-nous directement :<br />
             <a id="contact-link" href="mailto:contact@lioraai.fr">📧 contact@lioraai.fr</a>
           </p>
         </div>
 
-        <!-- Formulaire d'inscription.
+        <!-- Formulaire alternatif pour ceux qui préfèrent laisser un message plutôt que de
+             réserver un créneau directement sur Google Calendar (bouton ci-contre).
              Par défaut : envoi via mailto vers contact@lioraai.fr (voir <script> en bas).
-             Pour un envoi sans ouvrir le client mail, remplacez par :
-             <form class="cta-form" action="https://formspree.io/f/VOTRE_ID" method="POST">
-             et retirez le gestionnaire JS 'demo-form'. -->
-        <form class="cta-form" id="demo-form">
+             Pour un envoi serveur (sans ouvrir le client mail ni exposer l'email dans le HTML),
+             configurez FORM_ENDPOINT dans le <script> en bas de page (ex. un endpoint Formspree
+             gratuit : https://formspree.io) — le formulaire l'utilisera automatiquement en priorité. -->
+        <form class="cta-form" id="demo-form" novalidate>
+          <p class="form-heading">Ou laissez-nous vos coordonnées, on vous recontacte sous 24h</p>
           <div class="field">
             <label for="f-nom">Nom complet</label>
-            <input id="f-nom" name="nom" type="text" autocomplete="name" placeholder="Dr. Marie Dupont" required />
+            <input id="f-nom" name="nom" type="text" autocomplete="name" placeholder="Dr. Marie Dupont" minlength="2" required />
+            <p class="field-error">Merci d'indiquer votre nom.</p>
           </div>
           <div class="field-row">
             <div class="field">
               <label for="f-email">Email</label>
-              <input id="f-email" name="email" type="email" autocomplete="email" placeholder="vous@cabinet.fr" required />
+              <input id="f-email" name="email" type="email" autocomplete="email" placeholder="vous@structure.fr" required />
+              <p class="field-error">Merci d'indiquer un email valide.</p>
             </div>
             <div class="field">
               <label for="f-tel">Téléphone</label>
-              <input id="f-tel" name="tel" type="tel" autocomplete="tel" placeholder="06 12 34 56 78" required />
+              <input id="f-tel" name="tel" type="tel" autocomplete="tel" placeholder="06 12 34 56 78" pattern="[0-9+()\-\s.]{6,20}" required />
+              <p class="field-error">Merci d'indiquer un téléphone valide.</p>
             </div>
           </div>
           <div class="field">
@@ -904,14 +1101,20 @@
               <option>Tarifs</option>
               <option>Autre</option>
             </select>
+            <p class="field-error">Merci de choisir un objet.</p>
           </div>
           <div class="field">
             <label for="f-msg">Votre message</label>
-            <textarea id="f-msg" name="message" placeholder="Type de cabinet, nombre de praticiens, vos besoins…"></textarea>
+            <textarea id="f-msg" name="message" placeholder="Type de structure, taille d'équipe, vos besoins…"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Réserver ma démo gratuite</button>
-          <p class="form-note">En envoyant, vous acceptez d'être recontacté par Liora AI. Aucune donnée médicale ne transite par ce formulaire.</p>
-          <p class="form-success">✓ Merci&nbsp;! Votre message est prêt à être envoyé — nous revenons vers vous sous 24h avec nos disponibilités.</p>
+          <!-- Anti-spam honeypot : champ invisible pour les humains, souvent rempli par les robots -->
+          <div class="field hp-field" aria-hidden="true">
+            <label for="f-site">Laissez ce champ vide</label>
+            <input id="f-site" name="site_url" type="text" tabindex="-1" autocomplete="off" />
+          </div>
+          <button type="submit" class="btn btn-primary">Envoyer ma demande</button>
+          <p class="form-note">En envoyant, vous acceptez d'être recontacté par Liora AI. Aucune donnée médicale ne transite par ce formulaire. Voir notre <a href="rgpd.html" style="color:var(--muted);text-decoration:underline;">politique de confidentialité</a>.</p>
+          <p class="form-success" role="status">✓ Merci&nbsp;! Votre message est prêt à être envoyé — nous revenons vers vous sous 24h. Pour un créneau immédiat, <a href="https://calendar.app.google/Gmgc3J21GyVwhLgh6" target="_blank" rel="noopener noreferrer" style="color:var(--green);text-decoration:underline;">réservez sur Google Calendar</a>.</p>
         </form>
       </div>
     </div>
@@ -919,6 +1122,17 @@
 </section>
 
 </main>
+
+<!-- =========================================================
+     COOKIE BANNER
+     ========================================================= -->
+<div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Gestion des cookies" hidden>
+  <p>Nous utilisons des cookies de mesure d'audience pour comprendre comment le site est utilisé et l'améliorer. Vous pouvez accepter ou refuser à tout moment. <a href="rgpd.html">En savoir plus</a>.</p>
+  <div class="cookie-banner-actions">
+    <button type="button" class="btn btn-ghost" id="cookie-refuse">Refuser</button>
+    <button type="button" class="btn btn-primary" id="cookie-accept">Accepter</button>
+  </div>
+</div>
 
 <!-- =========================================================
      FOOTER
@@ -930,14 +1144,24 @@
         <svg class="logo" aria-hidden="true"><use href="#lion" /></svg>
         <span class="wordmark">Liora<span class="ai">AI</span></span>
       </a>
-      <p class="tag">La lumière qui veille sur votre cabinet.</p>
+      <p class="tag">La lumière qui veille sur votre accueil téléphonique.</p>
+      <!-- Réseaux sociaux : remplacez les href="#" par vos vraies pages une fois créées. -->
+      <div class="footer-social" aria-label="Réseaux sociaux Liora AI">
+        <a href="#" aria-label="Liora AI sur LinkedIn" title="LinkedIn (lien à configurer)">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3V9zm7 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.15 1.46-2.15 2.96V21h-4V9z"/></svg>
+        </a>
+        <a href="#" aria-label="Liora AI sur Instagram" title="Instagram (lien à configurer)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+        </a>
+      </div>
     </div>
     <div class="footer-links">
       <div>
-        <h4>Solutions</h4>
+        <h4>Secteurs</h4>
         <ul>
           <li><a href="pour-cabinets-dentaires.html">Cabinets dentaires</a></li>
-          <li><a href="pour-chirurgie-esthetique.html">Chirurgie esthétique</a></li>
+          <li><a href="pour-agences-immobilieres.html">Agences immobilières</a></li>
+          <li><a href="pour-cabinets-avocats.html">Cabinets d'avocats</a></li>
         </ul>
       </div>
       <div>
@@ -945,13 +1169,23 @@
         <ul>
           <li><a href="pourquoi-cabinet-dentaire-perd-patients-telephone.html">Guide : appels manqués</a></li>
           <li><a href="#faq">FAQ</a></li>
+          <li><a href="https://calendar.app.google/Gmgc3J21GyVwhLgh6" target="_blank" rel="noopener noreferrer">Réserver une démo</a></li>
         </ul>
       </div>
     </div>
-    <p class="footer-meta">Réceptionniste IA pour cabinets dentaires &amp; de chirurgie esthétique · 🇫🇷 France · 🇨🇭 Suisse · © 2026 Liora AI</p>
+    <div>
+      <p class="footer-meta">Réceptionniste IA pour cabinets dentaires, agences immobilières &amp; cabinets d'avocats · 🇫🇷 France · 🇨🇭 Suisse · © 2026 Liora AI</p>
+      <div class="footer-legal">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="cgu.html">CGU</a>
+        <a href="rgpd.html">Confidentialité (RGPD)</a>
+        <button type="button" id="manage-cookies">Gérer les cookies</button>
+      </div>
+    </div>
   </div>
 </footer>
 
+<script src="consent.js" defer></script>
 <script>
   // SEO : canonical + og:url selon le domaine ; noindex sur les hôtes non-primaires (onrender, previews)
   (function () {
@@ -986,22 +1220,80 @@
     els.forEach(function (e) { io.observe(e); });
   })();
 
-  // Formulaire de démo → envoi par email (mailto).
-  // Email selon le domaine : contact@lioraai.ch depuis lioraai.ch, sinon contact@lioraai.fr.
+  // 3D tilt + cursor-tracked spotlight on the "Nos secteurs" cards
+  (function () {
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var isTouch = window.matchMedia('(hover: none), (pointer: coarse)').matches;
+    if (reduce || isTouch) return; // keep it a static card on touch devices / reduced motion
+
+    var cards = document.querySelectorAll('.vertical-card');
+    var MAX_TILT = 8; // degrees
+
+    cards.forEach(function (card) {
+      card.addEventListener('mousemove', function (e) {
+        var r = card.getBoundingClientRect();
+        var px = (e.clientX - r.left) / r.width;   // 0..1
+        var py = (e.clientY - r.top) / r.height;   // 0..1
+        var rotateY = (px - 0.5) * MAX_TILT * 2;
+        var rotateX = (0.5 - py) * MAX_TILT * 2;
+        card.style.transform = 'translateY(-6px) rotateX(' + rotateX.toFixed(2) + 'deg) rotateY(' + rotateY.toFixed(2) + 'deg)';
+        card.style.setProperty('--mx', (px * 100).toFixed(1) + '%');
+        card.style.setProperty('--my', (py * 100).toFixed(1) + '%');
+      });
+      card.addEventListener('mouseleave', function () {
+        card.style.transform = '';
+      });
+    });
+  })();
+
+  // Formulaire de démo : validation, anti-spam, puis envoi.
   (function () {
     var CONTACT_EMAIL = /(^|\.)lioraai\.ch$/i.test(location.hostname)
       ? "contact@lioraai.ch"
       : "contact@lioraai.fr";
 
-    // Adapte le lien de contact affiché au domaine visité
+    // Envoi serveur optionnel (sans ouvrir le client mail) : renseignez l'URL d'un endpoint
+    // de type Formspree (https://formspree.io, gratuit) — ex. "https://formspree.io/f/xxxxabcd".
+    // Laissé vide, le formulaire retombe sur le mailto ci-dessous.
+    var FORM_ENDPOINT = "";
+
+    var LOAD_TIME = Date.now();
+    var MIN_FILL_TIME_MS = 2500; // anti-spam : rejette les envois "trop rapides" (bots)
+
     var cl = document.getElementById('contact-link');
     if (cl) { cl.href = 'mailto:' + CONTACT_EMAIL; cl.textContent = '📧 ' + CONTACT_EMAIL; }
 
     var form = document.getElementById('demo-form');
     if (!form) return;
+
+    function setError(field, show) {
+      var wrap = field.closest('.field');
+      if (!wrap) return;
+      wrap.classList.toggle('has-error', show);
+    }
+
+    function validate() {
+      var valid = true;
+      ['f-nom', 'f-email', 'f-tel', 'f-objet'].forEach(function (id) {
+        var el = document.getElementById(id);
+        var ok = el.checkValidity();
+        setError(el, !ok);
+        if (!ok) valid = false;
+      });
+      return valid;
+    }
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var f = e.target;
+
+      if (!validate()) return;
+
+      // Honeypot : un champ invisible rempli = robot, on ignore silencieusement.
+      if (f.site_url && f.site_url.value) { return; }
+      // Trop rapide pour un humain = probable robot.
+      if (Date.now() - LOAD_TIME < MIN_FILL_TIME_MS) { return; }
+
       var objet = f.objet.value || 'Réserver une démo';
       var subject = '[Liora] ' + objet + ' — ' + f.nom.value;
       var body =
@@ -1010,10 +1302,19 @@
         '\nTéléphone : ' + f.tel.value +
         '\nObjet : ' + objet +
         '\n\nMessage :\n' + (f.message.value || '—');
-      window.location.href = 'mailto:' + CONTACT_EMAIL +
-        '?subject=' + encodeURIComponent(subject) +
-        '&body=' + encodeURIComponent(body);
-      form.classList.add('sent');
+
+      if (FORM_ENDPOINT) {
+        var payload = new FormData(f);
+        fetch(FORM_ENDPOINT, { method: 'POST', body: payload, headers: { Accept: 'application/json' } })
+          .then(function () { form.classList.add('sent'); form.reset(); })
+          .catch(function () {
+            window.location.href = 'mailto:' + CONTACT_EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+            form.classList.add('sent');
+          });
+      } else {
+        window.location.href = 'mailto:' + CONTACT_EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+        form.classList.add('sent');
+      }
     });
   })();
 </script>

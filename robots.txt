@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /pour-chirurgie-esthetique.html
 
 Sitemap: https://lioraai.fr/sitemap.xml

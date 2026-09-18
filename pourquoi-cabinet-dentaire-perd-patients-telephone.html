@@ -66,6 +66,8 @@
 </head>
 <body>
 
+<a href="#main" class="skip-link">Aller au contenu principal</a>
+
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="lion" viewBox="0 0 64 64">
     <defs>
@@ -100,17 +102,23 @@
       <svg class="logo" aria-hidden="true"><use href="#lion" /></svg>
       <span class="wordmark">Liora<span class="ai">AI</span></span>
     </a>
-    <nav class="nav-links" aria-label="Navigation principale">
+    <nav class="nav-links" id="nav-links" aria-label="Navigation principale">
       <a href="/pour-cabinets-dentaires.html">Cabinets dentaires</a>
-      <a href="/pour-chirurgie-esthetique.html">Chirurgie esthétique</a>
+      <a href="/pour-agences-immobilieres.html">Agences immobilières</a>
+      <a href="/pour-cabinets-avocats.html">Cabinets d'avocats</a>
       <a href="/pourquoi-cabinet-dentaire-perd-patients-telephone.html">Guide</a>
       <a href="/#faq">FAQ</a>
     </nav>
-    <a href="/#demo" class="btn btn-primary">Réserver une démo</a>
+    <div class="nav-right">
+      <a href="https://calendar.app.google/Gmgc3J21GyVwhLgh6" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Réserver une démo</a>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
 
-<main>
+<main id="main">
 <section class="page-header">
   <div class="container">
     <div class="breadcrumb"><a href="/">Accueil</a> <span>/</span> <span>Guide</span></div>
@@ -147,9 +155,9 @@
     </ul>
 
     <h2>Ce qu'apporte une réceptionniste IA comme Liora</h2>
-    <p>Liora a été conçue spécifiquement pour répondre à ce problème dans les cabinets dentaires et de chirurgie esthétique. Elle décroche à chaque appel, 24h/24, prend et déplace les rendez-vous directement dans l'agenda du cabinet, identifie les urgences pour les orienter en priorité, et transfère à un membre de l'équipe dès qu'une demande sort de son périmètre. Chaque rendez-vous est confirmé par SMS, ce qui réduit aussi les rendez-vous manqués côté patient.</p>
+    <p>Liora a été conçue spécifiquement pour répondre à ce problème dans les cabinets dentaires. Elle décroche à chaque appel, 24h/24, prend et déplace les rendez-vous directement dans l'agenda du cabinet, identifie les urgences pour les orienter en priorité, et transfère à un membre de l'équipe dès qu'une demande sort de son périmètre. Chaque rendez-vous est confirmé par SMS, ce qui réduit aussi les rendez-vous manqués côté patient.</p>
     <p>Le tout sans changer l'installation téléphonique existante, et sans que le cabinet ait à recruter ou former quelqu'un : Liora est opérationnelle en moins de 48h, puis calibrée pendant 30 jours pour parler exactement comme le cabinet.</p>
-    <p>Pour aller plus loin selon votre activité, découvrez le détail de la solution <a href="/pour-cabinets-dentaires.html">pour les cabinets dentaires</a> ou <a href="/pour-chirurgie-esthetique.html">pour la chirurgie et médecine esthétique</a>.</p>
+    <p>Pour aller plus loin, découvrez le détail de la solution <a href="/pour-cabinets-dentaires.html">pour les cabinets dentaires</a>. Liora équipe aussi les <a href="/pour-agences-immobilieres.html">agences immobilières</a> et les <a href="/pour-cabinets-avocats.html">cabinets d'avocats</a>.</p>
   </div>
 </section>
 
@@ -159,11 +167,19 @@
       <p class="kicker" style="justify-content:center;display:flex;">Réserver une démo</p>
       <h2>Voyez Liora répondre à un appel de votre cabinet, en direct.</h2>
       <p>Démo personnalisée de 15 minutes, tarif clair, sans engagement.</p>
-      <a href="/#demo" class="btn btn-primary">Réserver une démo gratuite</a>
+      <a href="https://calendar.app.google/Gmgc3J21GyVwhLgh6" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Réserver une démo gratuite</a>
     </div>
   </div>
 </section>
 </main>
+
+<div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Gestion des cookies" hidden>
+  <p>Nous utilisons des cookies de mesure d'audience pour comprendre comment le site est utilisé et l'améliorer. Vous pouvez accepter ou refuser à tout moment. <a href="/rgpd.html">En savoir plus</a>.</p>
+  <div class="cookie-banner-actions">
+    <button type="button" class="btn btn-ghost" id="cookie-refuse">Refuser</button>
+    <button type="button" class="btn btn-primary" id="cookie-accept">Accepter</button>
+  </div>
+</div>
 
 <footer>
   <div class="container footer-inner">
@@ -172,14 +188,23 @@
         <svg class="logo" aria-hidden="true"><use href="#lion" /></svg>
         <span class="wordmark">Liora<span class="ai">AI</span></span>
       </a>
-      <p class="tag">La lumière qui veille sur votre cabinet.</p>
+      <p class="tag">La lumière qui veille sur votre accueil téléphonique.</p>
+      <div class="footer-social" aria-label="Réseaux sociaux Liora AI">
+        <a href="#" aria-label="Liora AI sur LinkedIn" title="LinkedIn (lien à configurer)">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3V9zm7 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.15 1.46-2.15 2.96V21h-4V9z"/></svg>
+        </a>
+        <a href="#" aria-label="Liora AI sur Instagram" title="Instagram (lien à configurer)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+        </a>
+      </div>
     </div>
     <div class="footer-links">
       <div>
-        <h4>Solutions</h4>
+        <h4>Secteurs</h4>
         <ul>
           <li><a href="/pour-cabinets-dentaires.html">Cabinets dentaires</a></li>
-          <li><a href="/pour-chirurgie-esthetique.html">Chirurgie esthétique</a></li>
+          <li><a href="/pour-agences-immobilieres.html">Agences immobilières</a></li>
+          <li><a href="/pour-cabinets-avocats.html">Cabinets d'avocats</a></li>
         </ul>
       </div>
       <div>
@@ -191,8 +216,17 @@
       </div>
     </div>
   </div>
-  <div class="container footer-bottom">Réceptionniste IA pour cabinets dentaires &amp; de chirurgie esthétique · 🇫🇷 France · 🇨🇭 Suisse · © 2026 Liora AI</div>
+  <div class="container footer-bottom">
+    Réceptionniste IA pour cabinets dentaires, agences immobilières &amp; cabinets d'avocats · 🇫🇷 France · 🇨🇭 Suisse · © 2026 Liora AI
+    <div class="footer-legal">
+      <a href="/mentions-legales.html">Mentions légales</a>
+      <a href="/cgu.html">CGU</a>
+      <a href="/rgpd.html">Confidentialité (RGPD)</a>
+      <button type="button" id="manage-cookies">Gérer les cookies</button>
+    </div>
+  </div>
 </footer>
 
+<script src="/consent.js" defer></script>
 </body>
 </html>

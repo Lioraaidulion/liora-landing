@@ -7,12 +7,35 @@ services:
     runtime: static
     buildCommand: ""
     staticPublishPath: .
-    # HTTPS (Let's Encrypt) est activé automatiquement par Render.
+    # HTTPS (Let's Encrypt) est activé et forcé automatiquement par Render pour les
+    # domaines personnalisés (redirection HTTP -> HTTPS). L'en-tête HSTS ci-dessous
+    # renforce ce comportement côté navigateur (SEO + sécurité).
     headers:
       - path: /*
         name: X-Content-Type-Options
         value: nosniff
+      - path: /*
+        name: Strict-Transport-Security
+        value: max-age=63072000; includeSubDomains; preload
+      - path: /*
+        name: X-Frame-Options
+        value: DENY
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+      - path: /*
+        name: Permissions-Policy
+        value: geolocation=(), camera=(), microphone=()
     routes:
-      - type: rewrite
-        source: /*
-        destination: /index.html
+      # Ancienne offre "chirurgie esthétique" retirée du positionnement (recentré sur
+      # cabinets dentaires / agences immobilières / cabinets d'avocats) : redirection
+      # 301 permanente pour préserver le SEO des liens externes existants.
+      - type: redirect
+        source: /pour-chirurgie-esthetique.html
+        destination: /pour-cabinets-dentaires.html
+
+      # NOTE : il n'y a volontairement PAS de rewrite catch-all "/* -> /index.html" ici.
+      # Ce site est multi-pages (pas une SPA) : un tel rewrite ferait répondre 200 avec
+      # index.html pour n'importe quelle URL invalide, ce qui casse les vrais 404 et nuit
+      # au SEO (pages fantômes indexées). Render sert automatiquement /404.html (présent
+      # à la racine de ce dépôt) pour toute route non trouvée.
